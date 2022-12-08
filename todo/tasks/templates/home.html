@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %} 
+<div class="center">
+    <img id="ufabc" src="{% static 'img/fundo-UFABC2.jpg' %}" width="55%" height="55%">
+</div>
+<div class="offset-1 col-10">
+    <br>
+    <h3>Bem vindo ao <img src="{% static 'img/labvirtual4.png' %}" width="15%" height="215%"></h3>
+    <p>O LabVirtual surgiu como uma solução, elaborado a partir dos conhecimentos aprendidos no curso de Bacharelado em Ciência da Computação, com a finalidade de auxiliar a aprendizagem dos conteúdos ministrados em laboratórios de química.</p>
+    <p>Sua importância se acentuou nos últimos anos com a crescente demanda por conteúdos de aprendizagem a distância.</p>
+</div>
+{% endblock %}

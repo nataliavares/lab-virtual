@@ -1,0 +1,263 @@
+.container {
+    padding: 0;
+}
+
+#atividade h4 {
+    color: #4D8A2E;    
+}
+
+/* Menu Inicial */
+
+#logo {
+    margin-left: 20px;
+}
+
+#menu {
+    margin-right: 10px;
+    background-color: white;
+    color: #4D8A2E;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #4D8A2E;
+}
+
+.navbar-nav {
+    margin: auto;
+    text-indent: 2em;
+}
+
+.navbar-nav a.navbar-link {
+    color: #f8f8f8;
+}
+
+.nav-link:link, .nav-link:active, .nav-link:visited{
+    color: #f8f8f8;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Minhas Atividades */
+
+.list:link, .list:active, .list:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.list:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.list-div {
+    padding:0;
+    height: 455px;
+}
+
+.activities-list {
+    padding-left: 0;
+}
+
+.activities-item {
+    list-style: none;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.activities-item-new {
+    list-style: none;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 10px;
+    color: #7F7F7F;
+}
+
+.fa-play {
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px;
+    float: right;
+}
+
+/* Rodapé */
+
+footer{
+    padding: 0;
+    margin-bottom: 20px;
+    background-color: #4D8A2E;
+    height: 40px;
+}
+
+footer p {
+    color: #f8f8f8;
+    text-align: center;
+    top: 30%;
+    position: relative;
+    font-size: 12px;
+}
+
+/* Login */
+
+.auth-card {
+    margin-bottom: 30px;
+}
+
+/* Lab 0 - Jogo da Memória de Vidrarias */
+
+#jogo-lab0 {
+    width: 1050px;
+    height: 455px;
+    position: relative;
+    margin: 5px auto;
+    border-radius: 15px;
+    background-color: #EFEFEF;
+}
+
+.jogo-lab1 {
+    width: 1050px;
+    height: 455px;
+    position: relative;
+    margin: 5px auto;
+    border-radius: 15px;
+}
+
+.force {
+    width: 1050px;
+    height: 455px;
+    position: relative;
+    backface-visibility: hidden;
+    background: url("../img/lab1-dipoloinduzido2.png");
+}
+
+
+
+.card {
+    width: 125px;
+    height: 220px;
+    position: absolute;
+    border-radius: 10px;
+    perspective: 600px;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: url("../img/backcard.png");
+}
+
+.back.flipped {
+    transform: rotateY(180deg);
+}
+
+.front {
+    transform:  rotateY(-180deg);
+}
+
+.front.flipped {
+    transform: rotateY(0deg);
+}
+
+.card:hover{
+    box-shadow: 0 0 10px #FFC000;
+}
+
+.face.flipped.match{
+    box-shadow: 0 0 10px #aaa;
+}
+
+#modalGameOver {
+    position: absolute;
+    top: 80px;
+    width: 85%;
+    height: 77%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -2;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+}
+
+#imgGameOver {
+    width: 50%;
+    height: 50%;
+    margin-top: 100px; 
+}
+
+#imgMatch{
+    width: 50%;
+    height: 50%;
+    margin-top: 10px; 
+    position: relative;
+    transition-property: top, opacity;
+    transition-duration: 5s;
+    opacity: 1;
+    z-index: -1;
+}
+
+/* Lab 1 - Forças Intermoleculares */
+
+#wrapper {
+    margin-top: 30px;
+    height: 455px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+#wrapper div, #wrapper ul {
+    width: 50%;
+    max-width: 700px;
+}
+
+#wrapper ul {
+    padding: 0px;
+}
+
+#titulo {
+    font-size: 20px;
+    font-weight: bold;
+    background: white;
+    padding: 10px;
+}
+
+.alternativa {
+    list-style-type: none;
+    margin-bottom: 4px;
+    padding: 10px;
+    background: #E6E6E6;
+}
+
+.alternativa:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background: #4D8A2E;
+    color: white;
+}
+
+#result {
+    font-weight: bold;
+}
+
+#imgGameOver2 {
+    width: 40%;
+    height: 40%;
+    margin-top: 120px; 
+    margin-left: -100px;
+}
+

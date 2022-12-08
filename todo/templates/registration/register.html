@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Cadastro - LabVirtual{% endblock %}
+
+{% block content %} 
+<div class="offset-3 col-6">
+    <h4 style="color:black">Faça seu cadastro no LabVirtual</h4>
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}">                    
+
+        {{ form|crispy }}
+        <br>
+        <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+        
+    </form>
+</div>
+<br>
+{% endblock %}

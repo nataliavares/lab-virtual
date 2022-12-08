@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Atividade 2{% endblock %}
+
+{% block content %} 
+<div id="wrapper">
+    <h4>Quiz - Estequiometria</h4>
+    <div id="titulo"></div>
+    <ul>
+        <li class="alternativa"></li>
+        <li class="alternativa"></li>
+        <li class="alternativa"></li>
+        <li class="alternativa"></li>
+    </ul>
+    <div id="result"></div>
+    <div id="pontos"></div>
+</div>
+<div id="gameOver">
+    <img src="{% static 'img/fimdejogo2.png' %}" id="imgGameOver2"/>
+</div>
+<script src="{% static 'js/scripts3.js' %}"></script>
+
+{% endblock %}
+

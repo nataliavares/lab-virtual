@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Login - LabVirtual{% endblock %}
+
+{% block content %} 
+<div class="offset-4 col-4">
+    <h4 style="color:black">Acesse a sua conta</h4>
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}">                    
+
+        {{ form|crispy }}
+        <br>
+        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+        
+    </form>
+</div>
+
+<br>
+<p class="center">Não está cadastrado no LabVirtual? <a href="/accounts/register">Faça seu cadastro</a></p>
+
+<br><br><br><br><br><br><br>
+
+{% endblock %}
